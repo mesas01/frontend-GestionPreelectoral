@@ -832,6 +832,11 @@ export default function GestionCenso() {
                     <option key={c.valor} value={c.valor}>{c.etiqueta}</option>
                   ))}
               </select>
+              {formularioEditar.estado === "EXENTO" && causalesEleccion.exento.length > 0 && (
+                <p className="mt-1 text-[11px] text-gray-400">
+                  Excenciones habilitadas para esta elección (cargadas desde Configuración Electoral)
+                </p>
+              )}
             </div>
 
             <div>
@@ -963,6 +968,11 @@ export default function GestionCenso() {
                   <option key={causal.valor} value={causal.valor}>{causal.etiqueta}</option>
                 ))}
               </select>
+              {formularioManual.estado === "EXENTO" && causalesEleccion.exento.length > 0 && (
+                <p className="mt-1 text-[11px] text-gray-400">
+                  Excenciones habilitadas para esta elección (cargadas desde Configuración Electoral)
+                </p>
+              )}
             </div>
 
             <div className="sm:col-span-2">
