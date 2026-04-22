@@ -9,7 +9,6 @@ import {
   Clock,
   Upload,
   X,
-  FileUp,
   UserPlus,
   CircleAlert,
 } from "lucide-react"
